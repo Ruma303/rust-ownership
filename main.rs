@@ -81,7 +81,7 @@ fn main() {
     /* let mut numero = 10;
     {
         let r1 = &numero; // r1 è un riferimento immutabile a numero
-        println!("r1: {}", r1); //* OK: leggere attraverso r1 è sicuro
+        println!("r1: {}", r1);  // OK: leggere attraverso r1 è sicuro
 
         //. Errore! Non possiamo creare un riferimento mutabile mentre r1 esiste.
         let r2 = &mut numero;
@@ -89,14 +89,12 @@ fn main() {
     } // r1 esce dallo scope qui
 
     {
-        //* OK: ora possiamo avere un riferimento mutabile perché non ci sono riferimenti immutabili
+        // OK: ora possiamo avere un riferimento mutabile perché non ci sono riferimenti immutabili
         let r2 = &mut numero;
-        *r2 += 1; //* OK: modifichiamo numero attraverso r2
-        println!("r2: {}", r2); //* OK: leggere attraverso r2 è sicuro
+        *r2 += 1; // OK: modifichiamo numero attraverso r2
+        println!("r2: {}", r2); // OK: leggere attraverso r2 è sicuro
 
         //. Errore! Non possiamo avere due riferimenti mutabili nello stesso scope.
         let r3 = &mut numero;
     } */ // r2 esce dallo scope qui. Possiamo creare nuovamente riferimenti mutabili o immutabili a numero
-
-
 }
