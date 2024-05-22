@@ -1,5 +1,25 @@
 fn main() {
 
+    //% Pointers e References
+
+    //# Primitive Arrays
+    /* let array1 = [1, 2, 3, 4, 5];
+    let array2 = array1;
+    println!("{:?}", (array1, array2)); */
+    // ([1, 2, 3, 4, 5], [1, 2, 3, 4, 5])
+
+    //# Vec
+    /* let vec1 = vec![1, 2, 3, 4, 5];
+    let vec2 = vec1.clone();
+    println!("{:?}", (vec1, vec2)); */
+    // ([1, 2, 3, 4, 5], [1, 2, 3, 4, 5])
+
+    /* let vec3 = vec![1, 2, 3, 4, 5];
+    let vec4 = &vec3;
+    println!("{:?}", (vec3, vec4)); */
+    // ([1, 2, 3, 4, 5], [1, 2, 3, 4, 5])
+
+
     //% Ownership
 
     /* let s1 = String::from("ciao");
